@@ -1,0 +1,19 @@
+{
+  "name": "urbanhair",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ed85w/UrbanHair.git"
+  },
+  "author": "ed walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ed85w/UrbanHair/issues"
+  },
+  "homepage": "https://github.com/ed85w/UrbanHair#readme"
+}
