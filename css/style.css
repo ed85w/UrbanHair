@@ -1,20 +1,60 @@
-.header div {
+* {
+
+}
+
+
+/*HOME PAGE*/
+
+/*contact details header*/
+
+.contact-header div {
 	text-align: right;
 	padding-right: 0;
 }
 
-.header ul {
+.contact-header ul {
 	margin: 5px 0 5px 0;
 }
 
-.header ul li {
+.contact-header ul li {
 	list-style: none;
 	display: inline;
 	padding: 0 10px 0 10px;
 }
 
+/*title header*/
 
+/*navbar*/
 
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+/*carousel*/
+
+/*.uib-carousel {
+	height: 50%;
+	position: relative;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}*/
+
+a.left.carousel-control,
+a.right.carousel-control {
+	display: none;
+}
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
