@@ -1,5 +1,5 @@
 * {
-
+	/*background: black;*/
 }
 
 
@@ -10,6 +10,7 @@
 .contact-header div {
 	text-align: right;
 	padding-right: 0;
+	height: 30px;
 }
 
 .contact-header ul {
@@ -36,6 +37,17 @@
 
 .navbar .navbar-collapse {
 	text-align: center;
+}
+
+.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+  z-index: 100;
+}
+
+.fixed-header-content {
+	padding-top: 127px;
 }
 
 /*carousel*/

@@ -1,15 +1,24 @@
 <!-- <h1>HOME</h1> -->
-
-<div ng-controller="HomeController">
-  <div style="height: 305px">
-    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-        <div class="carousel-caption">
-          <!-- <h4>Slide {{slide.id}}</h4> -->
-          <p>{{slide.text}}</p>
+<div class="container content">
+  <div ng-controller="HomeController">
+    <div>
+      <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+        <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+          <img ng-src="{{slide.image}}" style="margin:auto; height: 500px; width: 100vw">
+          <div class="carousel-caption">
+            <!-- <h4>Slide {{slide.id}}</h4> -->
+            <p>{{slide.text}}</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="col-md-10">
+    <p>
+      Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLoremLorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem Lorem ipsum Lorem ipsumLorem ipsumLorem Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum
+    </p>
+  </div>
+</div>
+
