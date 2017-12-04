@@ -1,0 +1,19 @@
+<div class="container-fluid" ng-controller="TreatmentsController">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col" colspan="2">NAILS</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in nails">
+						<td>{{item.description }}</td>
+						<td>{{item.price}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>	
+</div>
