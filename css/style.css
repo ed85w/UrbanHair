@@ -1,11 +1,16 @@
 * {
 	padding: 0;
+	color: rgb(212,175,55);
+}
+
+body {
+	background-color: black;
 }
 
 
 .test {
 	border:2px solid red;
-	height: 300px;
+	height: 200px;
 }
 
 /*INDEX*/
@@ -19,6 +24,11 @@
 .navbar .navbar-nav {
 	display: inline-block;
 	float: none;
+
+}
+
+.navbar a {
+	color: rgb(212,175,55);	
 }
 
 .navbar .navbar-collapse {
@@ -56,11 +66,12 @@ div.item {
 }
 
 .carousel-text h1 {
-	font-size: 5vw;
+	font-size: 4.5vw;
+	margin-top: 15vw;
 }
 
 .carousel-text h3 {
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 
 
@@ -83,7 +94,12 @@ div.item {
  
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-// css specific properties col-xs-*
+/*// css specific properties col-xs-**/
+
+.carousel-text h1 {
+	margin-top: 12vw;
+}
+
 }
  
 /* Portrait phones and smaller */
