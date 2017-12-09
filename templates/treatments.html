@@ -1,19 +1,98 @@
 <div class="container-fluid" ng-controller="TreatmentsController">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-12 text-center">
+				<h1>Nails</h1>
+			</div>
 			<table class="table">
-				<thead>
-					<tr>
-						<th scope="col" colspan="2">NAILS</th>
-					</tr>
-				</thead>
 				<tbody>
 					<tr ng-repeat="item in nails">
-						<td>{{item.description }}</td>
-						<td>{{item.price}}</td>
+						<td class="col-md-11">{{item.description }}</td>
+						<td class="col-md-1">{{item.price}}</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 	</div>	
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-12 text-center">
+				<h1>Waxing</h1>
+			</div>
+			<table class="table">
+				<tbody>
+					<tr ng-repeat="item in waxing">
+						<td class="col-md-11">{{item.description }}</td>
+						<td class="col-md-1">{{item.price}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-12 text-center">
+				<h1>Eyes</h1>
+			</div>
+			<table class="table">
+				<tbody>
+					<tr ng-repeat="item in eyes">
+						<td class="col-md-11">{{item.description }}</td>
+						<td class="col-md-1">{{item.price}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-12 text-center">
+				<h1>Facials</h1>
+			</div>
+			<table class="table">
+				<tbody>
+					<tr ng-repeat="item in facials">
+						<td class="col-md-11">{{item.description }}</td>
+						<td class="col-md-1">{{item.price}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-12 text-center">
+				<h1>Massage</h1>
+			</div>
+			<table class="table">
+				<tbody>
+					<tr ng-repeat="item in massage">
+						<td class="col-md-11">{{item.description }}</td>
+						<td class="col-md-1">{{item.price}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-12 text-center">
+				<h1>Threading</h1>
+			</div>
+			<table class="table">
+				<tbody>
+					<tr ng-repeat="item in threading">
+						<td class="col-md-11">{{item.description }}</td>
+						<td class="col-md-1">{{item.price}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
 </div>

@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	color: rgb(212,175,55);
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -10,15 +11,29 @@ body {
 
 .test {
 	border:2px solid red;
-	height: 200px;
+	/*height: 200px;*/
+	padding: 0;
 }
 
 /*INDEX*/
 
 /*navbar*/
 
-#nav-container {
+.navbar {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
+.navbar a  {
+	color: rgb(212,175,55);	
+}
+
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:focus {
+	border-bottom: 4px solid rgb(212,175,55);
+	background-color: transparent;
+	height: 46px;
 }
 
 .navbar .navbar-nav {
@@ -27,12 +42,44 @@ body {
 
 }
 
-.navbar a {
-	color: rgb(212,175,55);	
-}
+
 
 .navbar .navbar-collapse {
+	/*margin-bottom: 10px;*/
 	text-align: center;
+}
+
+li.socials>a {
+	width: 24px;
+	border-radius: 50%;
+	background-color: rgb(212,175,55);
+	margin-top: 14px;
+	margin-right: 15px;
+	padding: 3px 3px 2px 3px;
+}
+
+
+
+#first-social {
+	margin-left: 50px;
+}
+
+li.socials>a:hover {
+	height: 24px;
+	background-color: rgb(212,175,55);
+    -ms-transform: scale(1.5, 1.5); /* IE 9 */
+    -webkit-transform: scale(1.5, 1.5); /* Safari */
+    transform: scale(1.5, 1.5);
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+
+.socials a i {
+	width: 14px;
+	color: black;
 }
 
 /*HOME*/
@@ -74,6 +121,44 @@ div.item {
 	font-size: 1.5vw;
 }
 
+.home-grid {
+	padding-top: 100px;
+}
+
+.grid-div {
+	height: 250px;
+	padding: 0;
+}
+
+.grid-div h2 {
+	position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+	transition: all 0;
+	-moz-transition: all 0;
+	-webkit-transition: all 0;
+	-ms-transition: all 0;
+	-o-transition: all 0;
+    margin: 0;
+}
+
+.grid-div h4 {
+	position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 5px;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+.grid-image {
+	background-position: center; 
+	background-size: cover;
+}
+
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -84,12 +169,22 @@ div.item {
  
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-// css specific properties col-md-*
+/*// css specific properties col-md-**/
+
+.grid-div {
+	height: 200px;
+}
+
 }
  
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-// css specific properties col-sm-*
+/*// css specific properties col-sm-**/
+
+.grid-div {
+	height: 150px;
+}
+
 }
  
 /* Landscape phones and portrait tablets */
