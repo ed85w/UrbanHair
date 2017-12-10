@@ -8,3 +8,7 @@
 // 	    $('.carousel-inner').height(carouselImageHeight);
 // 	};
 // }
+
+$(window).on('load', function () {
+    AOS.refresh();
+});

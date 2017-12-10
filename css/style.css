@@ -28,12 +28,8 @@ body {
 	color: rgb(212,175,55);	
 }
 
-.nav>li>a:hover,
-.nav>li>a:active,
-.nav>li>a:focus {
-	border-bottom: 4px solid rgb(212,175,55);
-	background-color: transparent;
-	height: 46px;
+a.navbar-brand {
+	padding-top: 5px;
 }
 
 .navbar .navbar-nav {
@@ -43,10 +39,22 @@ body {
 }
 
 
+li.links a:hover,
+li.links a:active,
+li.links a:focus {
+	border-bottom: 4px solid rgb(212,175,55);
+	background-color: transparent;
+	height: 46px;
+}
+
 
 .navbar .navbar-collapse {
 	/*margin-bottom: 10px;*/
 	text-align: center;
+}
+
+#first-social {
+	margin-left: 50px;
 }
 
 li.socials>a {
@@ -58,11 +66,11 @@ li.socials>a {
 	padding: 3px 3px 2px 3px;
 }
 
-
-
-#first-social {
-	margin-left: 50px;
+li.socials>a:visited {
+	background-color: rgb(212,175,55);
 }
+
+
 
 li.socials>a:hover {
 	height: 24px;
@@ -80,6 +88,13 @@ li.socials>a:hover {
 .socials a i {
 	width: 14px;
 	color: black;
+}
+
+#phone {
+	position: absolute;
+	right: 5px;
+	top: 40%;
+	margin: 0;
 }
 
 /*HOME*/
@@ -110,6 +125,7 @@ div.item {
 .carousel-text {
 	position: absolute;
 	top: 0;
+	animation-duration: 4s;
 }
 
 .carousel-text h1 {
