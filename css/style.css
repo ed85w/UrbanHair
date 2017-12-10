@@ -1,7 +1,7 @@
 * {
 	padding: 0;
-	color: rgb(212,175,55);
-	font-family: 'Roboto', sans-serif;
+	color: #D1913C;
+	font-family: 'Comfortaa', cursive;
 }
 
 body {
@@ -11,11 +11,11 @@ body {
 
 .test {
 	border:2px solid red;
-	/*height: 200px;*/
+	height: 200px;
 	padding: 0;
 }
 
-/*INDEX*/
+/*INDEX
 
 /*navbar*/
 
@@ -25,11 +25,18 @@ body {
 }
 
 .navbar a  {
-	color: rgb(212,175,55);	
+	/*gold colour for text*/
+	background: #D1913C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/*end of gold colour for text*/
 }
 
 a.navbar-brand {
-	padding-top: 5px;
+	font-size: 50px;
+	height: 60px;
 }
 
 .navbar .navbar-nav {
@@ -38,12 +45,25 @@ a.navbar-brand {
 
 }
 
+/*'burger' colour*/
+span.icon-bar {
+	background: #D1913C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+li.links a {
+	margin-top: 5px;
+	font-weight: bold;
+}
+
 
 li.links a:hover,
 li.links a:active,
 li.links a:focus {
 	border-bottom: 4px solid rgb(212,175,55);
-	background-color: transparent;
+	/*background-color: transparent;*/
 	height: 46px;
 }
 
@@ -60,10 +80,13 @@ li.links a:focus {
 li.socials>a {
 	width: 24px;
 	border-radius: 50%;
-	background-color: rgb(212,175,55);
+	background: #D1913C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	margin-top: 14px;
 	margin-right: 15px;
 	padding: 3px 3px 2px 3px;
+	-webkit-text-fill-color:black;
 }
 
 li.socials>a:visited {
@@ -74,7 +97,7 @@ li.socials>a:visited {
 
 li.socials>a:hover {
 	height: 24px;
-	background-color: rgb(212,175,55);
+	/*background-color: rgb(212,175,55);*/
     -ms-transform: scale(1.5, 1.5); /* IE 9 */
     -webkit-transform: scale(1.5, 1.5); /* Safari */
     transform: scale(1.5, 1.5);
@@ -87,14 +110,34 @@ li.socials>a:hover {
 
 .socials a i {
 	width: 14px;
-	color: black;
+	color: red;
 }
 
 #phone {
+	font-weight: bold;
 	position: absolute;
 	right: 5px;
-	top: 40%;
+	top: 36%;
 	margin: 0;
+	background: #D1913C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*footer*/
+
+.footer {
+	height: 100px;
+	z-index: 1;
+}
+
+
+.footer li {
+	display: inline-block;
+	margin-top: 45px;
+	padding: 20px;
 }
 
 /*HOME*/
@@ -126,6 +169,8 @@ div.item {
 	position: absolute;
 	top: 0;
 	animation-duration: 4s;
+	color: black;
+	padding-left: 0px;
 }
 
 .carousel-text h1 {
@@ -157,7 +202,13 @@ div.item {
 	-ms-transition: all 0;
 	-o-transition: all 0;
     margin: 0;
+	background: #D1913C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
+
 
 .grid-div h4 {
 	position: absolute;
@@ -166,14 +217,48 @@ div.item {
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 5px;
-    border: 2px solid gold;
-    border-radius: 5px;
+    border: 2px solid #D1913C;
+    border-radius: 25px;
+	background: #D1913C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
 }
 
 .grid-image {
 	background-position: center; 
 	background-size: cover;
 }
+
+.silver-back {
+	background: #ADA996;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ADA996, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ADA996, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gold-back {
+	background: #D1913C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gold-back h2,
+.silver-back h2,
+.gold-back h4,
+.silver-back h4 {
+	background: none;
+	-webkit-text-fill-color:black;
+	color: black;
+}
+
+.gold-back h4,
+.silver-back h4 {
+	border: 2px solid black;
+}
+
+
 
 
 /*==================================================
@@ -196,6 +281,20 @@ div.item {
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 /*// css specific properties col-sm-**/
+
+/*INDEX*/
+
+a.navbar-brand {
+	font-size: 43px;
+	height: 60px;
+}
+
+.navbar-brand h5 {
+  font-size:12px;
+}
+
+
+/*HOME*/
 
 .grid-div {
 	height: 150px;
